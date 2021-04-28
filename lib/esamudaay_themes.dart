@@ -45,9 +45,9 @@ class _EsamudaayThemeInheritedWidget extends InheritedWidget {
   final _EsamudaayThemeState data;
 
   _EsamudaayThemeInheritedWidget({
-    this.data,
-    Key key,
-    @required Widget child,
+    required this.data,
+    Key? key,
+    required Widget child,
   }) : super(key: key, child: child);
 
   @override
@@ -61,9 +61,9 @@ class EsamudaayTheme extends StatefulWidget {
   final THEME_TYPES initialThemeType;
 
   const EsamudaayTheme({
-    Key key,
-    this.initialThemeType,
-    @required this.child,
+    Key? key,
+    required this.initialThemeType,
+    required this.child,
   }) : super(key: key);
 
   @override
@@ -71,21 +71,27 @@ class EsamudaayTheme extends StatefulWidget {
 
   // method to access the theme data
   static EsamudaayThemeData of(BuildContext context) {
-    _EsamudaayThemeInheritedWidget inherited = (context
-        .dependOnInheritedWidgetOfExactType<_EsamudaayThemeInheritedWidget>());
-    return inherited.data.theme;
+    _EsamudaayThemeInheritedWidget? inherited = context
+        .dependOnInheritedWidgetOfExactType<_EsamudaayThemeInheritedWidget>();
+
+    assert(inherited != null, 'No theme found in context');
+
+    return inherited!.data.theme;
   }
 
   // method to update the theme data
   static _EsamudaayThemeState instanceOf(BuildContext context) {
-    _EsamudaayThemeInheritedWidget inherited = (context
+    _EsamudaayThemeInheritedWidget? inherited = (context
         .dependOnInheritedWidgetOfExactType<_EsamudaayThemeInheritedWidget>());
-    return inherited.data;
+
+    assert(inherited != null, 'No theme found in context');
+
+    return inherited!.data;
   }
 }
 
 class _EsamudaayThemeState extends State<EsamudaayTheme> {
-  EsamudaayThemeData _theme;
+  late final EsamudaayThemeData _theme;
   EsamudaayThemeData get theme => _theme;
 
   @override
