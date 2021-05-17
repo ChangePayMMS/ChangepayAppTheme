@@ -11,9 +11,9 @@ class EsamudaayThemeData {
   // Creating custom colorScheme and textTheme
   // so that , we can use more meaningful names for colors and textstyles defined in theme data.
   // also we can avoid overriding the old screen's style variables while using dynamic values for new screens.
-  _AppThemeColors colors;
-  _AppTextStyles textStyles;
-  ThemeData themeData;
+  late final _AppThemeColors colors;
+  late final _AppTextStyles textStyles;
+  late final ThemeData themeData;
 
   EsamudaayThemeData(THEME_TYPES themeTypes) {
     // check the themeTypes and pass the AppThemeColors accordingly.
