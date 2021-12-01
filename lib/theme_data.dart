@@ -31,6 +31,7 @@ class EsamudaayThemeData {
       brightness: colors.brightness,
       scaffoldBackgroundColor: colors.backgroundColor,
       primaryColor: colors.primaryColor,
+      colorScheme: AppColorScheme.colorScheme,
       appBarTheme: AppBarTheme(
         color: colors.backgroundColor,
         iconTheme: IconThemeData(

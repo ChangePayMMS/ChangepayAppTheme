@@ -2,6 +2,7 @@ library esamudaay_themes;
 
 import 'package:flutter/material.dart';
 
+part 'package:esamudaay_themes/color_scheme.dart';
 part 'package:esamudaay_themes/theme_constants/theme_constants.dart';
 part 'package:esamudaay_themes/theme_constants/consumer_primary_theme.dart';
 part 'package:esamudaay_themes/theme_constants/merchant_primary_theme.dart';
