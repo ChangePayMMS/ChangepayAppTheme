@@ -5,26 +5,70 @@ part of 'package:esamudaay_themes/esamudaay_themes.dart';
 
 abstract class _AppThemeColors {
   Color get primaryColor;
+
   Color get secondaryColor;
+
   Color get placeHolderColor;
+
   Color get backgroundColor;
+
   Color get positiveColor;
+
   Color get textColor;
+
   Color get textColorDarker;
+
   Color get disabledAreaColor;
+
   Color get warningColor;
+
   Color get shadowColor;
+
   Color get storeCoreColor;
+
   Color get shadowColor16;
+
   Color get categoryTileTextUnderlay;
+
   Color get dividerColor;
+
   Color get storeInfoColor;
+
+  Color get primaryPurpleDark2;
+
+  Color get primaryPurpleDark1;
+
+  Color get primaryPurpleMain;
+
+  Color get primaryPurpleLight1;
+
+  Color get primaryPurpleLight2;
+
+  Color get secondaryMain;
+
+  Color get neutralDark100;
+
+  Color get neutralMain;
+
+  Color get neutralLight100;
+
+  Color get neutralLight200;
+
+  Color get neutralLight300;
+
+  Color get neutralLight400;
+
+  Color get neutralLight500;
+
+  Color get semanticGreenIcon;
+
   Brightness get brightness;
 }
 
 // define all the font families used throughout the app.
 class _AppFontFamily {
   static const String archivo = "Archivo";
+
   //static const String avenir = "Avenir";
   static const String lato = "Lato";
 }
@@ -38,6 +82,7 @@ class _AppFontFamily {
 
 class _AppTextStyles {
   final _AppThemeColors themeColors;
+
   _AppTextStyles(this.themeColors);
 
   TextStyle get merchantCardTitle => TextStyle(
@@ -137,6 +182,7 @@ class _AppTextStyles {
         decorationThickness: 2,
         decorationStyle: TextDecorationStyle.dashed,
       );
+
   TextStyle get buttonText2 => TextStyle(
         color: themeColors.primaryColor,
         fontSize: 10,
@@ -174,4 +220,50 @@ class _AppTextStyles {
         fontFamily: _AppFontFamily.lato,
         height: 1.2,
       );
+
+  ///New text styles added after design system changes
+
+  TextStyle get heading1 => TextStyle(
+        fontSize: 16,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w700,
+        height: 1.25,
+      );
+
+  TextStyle get heading2 => TextStyle(
+    fontSize: 16,
+    fontFamily: _AppFontFamily.lato,
+    fontWeight: FontWeight.w700,
+    height: 1.25,
+  );
+
+  TextStyle get heading3 => TextStyle(
+    fontSize: 16,
+    fontFamily: _AppFontFamily.lato,
+    fontWeight: FontWeight.w700,
+    height: 1.25,
+  );
+
+  TextStyle get headerSemiBold1 => TextStyle(
+        fontSize: 16,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w600,
+        height: 1.25,
+      );
+
+  TextStyle get headerSemiBold2 => TextStyle(
+    fontSize: 14,
+    fontFamily: _AppFontFamily.lato,
+    fontWeight: FontWeight.w600,
+    height: 20/14,
+  );
+
+  TextStyle get headerSemiBold3 => TextStyle(
+    fontSize: 12,
+    fontFamily: _AppFontFamily.lato,
+    fontWeight: FontWeight.w600,
+    height: 16/12,
+  );
+
+
 }
