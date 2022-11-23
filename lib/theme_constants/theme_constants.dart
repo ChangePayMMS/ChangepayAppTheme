@@ -231,18 +231,18 @@ class _AppTextStyles {
       );
 
   TextStyle get heading2 => TextStyle(
-    fontSize: 16,
-    fontFamily: _AppFontFamily.lato,
-    fontWeight: FontWeight.w700,
-    height: 1.25,
-  );
+        fontSize: 16,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w700,
+        height: 1.25,
+      );
 
   TextStyle get heading3 => TextStyle(
-    fontSize: 16,
-    fontFamily: _AppFontFamily.lato,
-    fontWeight: FontWeight.w700,
-    height: 1.25,
-  );
+        fontSize: 16,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w700,
+        height: 1.25,
+      );
 
   TextStyle get headerSemiBold1 => TextStyle(
         fontSize: 16,
@@ -252,18 +252,37 @@ class _AppTextStyles {
       );
 
   TextStyle get headerSemiBold2 => TextStyle(
-    fontSize: 14,
-    fontFamily: _AppFontFamily.lato,
-    fontWeight: FontWeight.w600,
-    height: 20/14,
-  );
+        fontSize: 14,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w600,
+        height: 20 / 14,
+      );
 
   TextStyle get headerSemiBold3 => TextStyle(
-    fontSize: 12,
-    fontFamily: _AppFontFamily.lato,
-    fontWeight: FontWeight.w600,
-    height: 16/12,
-  );
+        fontSize: 12,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w600,
+        height: 16 / 12,
+      );
 
+  TextStyle get bodyRegular1 => TextStyle(
+        fontSize: 16,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w400,
+        height: 20 / 16,
+      );
 
+  TextStyle get bodyRegular2 => TextStyle(
+        fontSize: 14,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w400,
+        height: 20 / 14,
+      );
+
+  TextStyle get bodyRegular3 => TextStyle(
+        fontSize: 12,
+        fontFamily: _AppFontFamily.lato,
+        fontWeight: FontWeight.w400,
+        height: 16 / 12,
+      );
 }
