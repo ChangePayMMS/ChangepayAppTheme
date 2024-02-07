@@ -3,7 +3,7 @@ part of 'package:esamudaay_themes/esamudaay_themes.dart';
 // class contains all the colors needed throughout the app.
 // add more colors here if needed and also override new colors in extended classes.
 
-abstract class _AppThemeColors {
+abstract class AppThemeColors {
   Color get primaryColor;
 
   Color get secondaryColor;
@@ -80,10 +80,10 @@ class _AppFontFamily {
 ///devices. Compared to other elements, fonts were smaller and weren't coming out well.
 ///If this still leads to noticeable issues on devices, then we'll find an optimum solution
 
-class _AppTextStyles {
-  final _AppThemeColors themeColors;
+class AppTextStyles {
+  final AppThemeColors themeColors;
 
-  _AppTextStyles(this.themeColors);
+  AppTextStyles(this.themeColors);
 
   TextStyle get merchantCardTitle => TextStyle(
         color: themeColors.primaryColor,
