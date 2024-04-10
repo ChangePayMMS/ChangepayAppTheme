@@ -1,7 +1,7 @@
 part of 'package:esamudaay_themes/esamudaay_themes.dart';
 
 // extension to get colors for light theme.
-class _DeliveryPrimaryThemeColors with _AppThemeColors {
+class _DeliveryPrimaryThemeColors with AppThemeColors {
   @override
   Color get primaryColor => _ColorConstants.brandViolet;
   @override

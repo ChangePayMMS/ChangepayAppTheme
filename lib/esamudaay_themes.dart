@@ -59,11 +59,11 @@ class _EsamudaayThemeInheritedWidget extends InheritedWidget {
 
 class EsamudaayTheme extends StatefulWidget {
   final Widget child;
-  final THEME_TYPES initialThemeType;
+  final EsamudaayThemeData esamudaayThemeData;
 
   const EsamudaayTheme({
     Key? key,
-    required this.initialThemeType,
+    required this.esamudaayThemeData,
     required this.child,
   }) : super(key: key);
 
@@ -97,14 +97,8 @@ class _EsamudaayThemeState extends State<EsamudaayTheme> {
 
   @override
   void initState() {
-    _theme = EsamudaayThemeData(widget.initialThemeType);
+    _theme = widget.esamudaayThemeData;
     super.initState();
-  }
-
-  void changeTheme(THEME_TYPES themeType) {
-    setState(() {
-      _theme = EsamudaayThemeData(themeType);
-    });
   }
 
   @override

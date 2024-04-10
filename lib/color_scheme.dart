@@ -14,9 +14,7 @@ class AppColorScheme {
   static ColorScheme get colorScheme {
     return ColorScheme(
       primary: _brandViolet,
-      primaryVariant: _brandViolet,
       secondary: _brandViolet,
-      secondaryVariant: _brandViolet,
       surface: _pureWhite,
       background: _pureWhite,
       error: _brandPink,
